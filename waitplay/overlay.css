@@ -1,0 +1,140 @@
+#waitplay-overlay {
+  all: initial;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  width: 260px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f2430;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  border: 1px solid #e2e5eb;
+  overflow: hidden;
+  animation: waitplay-fade-in 160ms ease-out;
+}
+
+#waitplay-overlay * {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+@keyframes waitplay-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.waitplay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background: #f4f6fb;
+  border-bottom: 1px solid #e2e5eb;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a5169;
+}
+
+.waitplay-close {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  line-height: 1;
+  color: #8a91a8;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.waitplay-close:hover {
+  background: #e2e5eb;
+  color: #1f2430;
+}
+
+.waitplay-body {
+  padding: 12px;
+}
+
+.waitplay-text {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+  color: #1f2430;
+}
+
+.waitplay-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.waitplay-btn {
+  flex: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.waitplay-btn-primary {
+  background: #4b6bfb;
+  color: #ffffff;
+}
+
+.waitplay-btn-primary:hover {
+  background: #3c58e0;
+}
+
+.waitplay-btn-secondary {
+  background: #eef0f5;
+  color: #4a5169;
+}
+
+.waitplay-btn-secondary:hover {
+  background: #e2e5eb;
+}
+
+.waitplay-canvas-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+#waitplay-canvas {
+  background: #0e1330;
+  border-radius: 6px;
+  display: block;
+}
+
+.waitplay-hint {
+  font-size: 11px;
+  color: #8a91a8;
+  text-align: center;
+  margin: 0;
+}
+
+.waitplay-score-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  color: #4a5169;
+  font-weight: 600;
+}
+
+.waitplay-result-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.waitplay-result-score {
+  font-size: 24px;
+  font-weight: 800;
+  color: #4b6bfb;
+  margin: 0 0 10px 0;
+}
